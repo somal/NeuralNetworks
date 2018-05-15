@@ -7,7 +7,10 @@ f = urllib.request.urlopen(fname)  # open file from URL
 data = np.loadtxt(f, delimiter=',', skiprows=1)  # load data to work with
 
 # here goes your solution
-print(len(data[0]))
+Y = data[:, 0]
+X = data[:, 1:]
+ones = np.ones_like(Y).reshape((Y.shape[0], 1))
+X = np.hstack((ones, X))
 
-
-# добавить единичку перед X чтобы найти B0
+B = np.linalg.inv(X.T.dot(X)).dot(X.T).dot(Y)
+print(" ".join(["{}".format(x) for x in B]))
