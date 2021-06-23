@@ -1,0 +1,19 @@
+1. Linear neurons
+
+stem:[f(x, w, b) = sum_(i=1)\^m(w_i*x_i+b)]
+
+2. Sigmoid neurons
+
+stem:[f(x, w, b) = sigma(w*x+b)]
+
+3. Tanh neurons
+
+stem:[f(x, w, b) = tanh(w*x+b)]
+
+4. Rectified linear unit (ReLU)
+
+stem:[f(x, w, b) = max(w*x+b, 0)]
+
+5. Softplus (like a ReLU)
+
+stem:[f(x, w, b) = ln(1+e^(w*x+b))]
