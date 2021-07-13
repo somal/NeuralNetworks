@@ -20,4 +20,4 @@ Use only part (batch) of gradients for increase speed + jump over small noises.
 
 ### GD for Quadratic loss and sigmoid neuron
 
-stem:[ (delta J)/(delta w_k) = 1/n*sum_(i=1)\^n((sigma*y_(pred_i)-y_i)*sigma*y_(pred_i)*(1-sigma*y_(pred_i))*x_k) ]
+stem:[ (delta J)/(delta w_k) = 1/n*sum_(i=1)\^n((sigma(y_(pred_i))-y_i)*sigma(y_(pred_i))*(1-sigma(y_(pred_i))*x_k) ]
