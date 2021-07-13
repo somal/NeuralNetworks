@@ -1,0 +1,23 @@
+#### Quadratic loss function
+
+stem:[J= 1/2*sum_(i=1)\^n(y_(pred_i)-y_i)^2]
+
+#### Loss gradient
+
+stem:[nabla J = [[(deltaJ)/(delta w_1)\],[...\],[(deltaJ)/(delta w_m)\]\]].
+
+### Gradient descent
+
+stem:[w_(i+1) = w_i -alpha * nabla J ]
+
+### GD for Quadratic loss and linear neuron
+
+stem:[ (delta J)/(delta w_j) = ... = sum_(i=1)\^n(x_j*(y_(pred_i)-y_i)^2) ]
+
+#### Stochastic gradient descent
+
+Use only part (batch) of gradients for increase speed + jump over small noises.
+
+### GD for Quadratic loss and sigmoid neuron
+
+stem:[ (delta J)/(delta w_k) = 1/n*sum_(i=1)\^n((sigma*y_(pred_i)-y_i)*sigma*y_(pred_i)*(1-sigma*y_(pred_i))*x_k) ]
